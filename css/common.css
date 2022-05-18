@@ -8,11 +8,13 @@
     /* светло-серый фон #F5F4FA; */
     /* футер прозрачно-белый rgba(255, 255, 255, 0.6) */
     /* фон футера/херо #2F303A */ 
+    /* button hover #188CE8 */
 
 :root {
     --main-text-color:#212121;
     --low-text-color:#757575;
     --accent-bgc:#2196F3;
+    --button-hover: #188CE8;
     --accent-color: #FFFFFF;
     --team-bgc:#F5F4FA;
     --hero-footer-color:#2F303A;
@@ -92,12 +94,16 @@
     line-height: 1.9;
     cursor: pointer;
 }
+.hero-button:hover {
+    background-color: var(--button-hover);
+}
 
 /* advanteges */
 .advantages-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
 }
 .advantages-text {
     color: var(--low-text-color);
@@ -134,17 +140,19 @@
 }
 
 /* footer */
-.footer {
-    color:var(--accent-color);
-    background-color:var(--hero-footer-color);
-}
-.map.adress {
-    color: var(--accent-color);
-}
 .adress {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.map.adress {
+    color: var(--accent-color);
+}
+.footer {
+    color:var(--accent-color);
+    background-color:var(--hero-footer-color);
 }
 .footer-logo {
     color: var(--accent-color);
@@ -181,9 +189,14 @@
 .job-list-title {
     letter-spacing: 0.06em;
     color:var(--main-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
 }
 .job-list-text {
     color:var(--low-text-color);
+    font-size: 16px;
+    line-height: 1.9;
 }
 
 /* hidden fix */
